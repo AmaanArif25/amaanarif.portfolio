@@ -13,7 +13,7 @@ export const DeveloperAvatar: React.FC<DeveloperAvatarProps> = ({ className = ''
     return (
       <div className={`relative ${className}`}>
         <img
-          src="/image.png"
+          src="./image.png"
           alt="Amaan Arif Profile"
           onError={() => setImageError(true)}
           referrerPolicy="no-referrer"
