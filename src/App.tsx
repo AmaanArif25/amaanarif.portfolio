@@ -464,7 +464,7 @@ export default function App() {
                   {project.imageUrl && (
                     <div className="overflow-hidden rounded-lg aspect-video w-full mb-4 relative bg-neutral-100 border border-clinical-border">
                       <img 
-                        src={project.imageUrl} 
+                        src={project.imageUrl.startsWith('/') ? `.${project.imageUrl}` : project.imageUrl} 
                         alt={project.title} 
                         className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500" 
                         referrerPolicy="no-referrer"
