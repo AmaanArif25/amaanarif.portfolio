@@ -128,7 +128,7 @@ export const projects: Project[] = [
       "Aims to improve access and early detection in remote settings.",
       "Patent-derived device mapping [I.4] and copyrighted SMIRITI software [I.2]."
     ],
-    imageUrl: "/p_1.png",
+    imageUrl: "./p_1.png",
     status: "PATENTED"
   },
   {
@@ -143,7 +143,7 @@ export const projects: Project[] = [
       "Delivers interpretable, multi-class risk indexes based on molecular descriptors.",
       "Aligned with Adverse Outcome Pathways (AOP) for regulatory safety clearances."
     ],
-    imageUrl: "/p_2.png"
+    imageUrl: "./p_2.png"
   },
   {
     id: "proj03",
@@ -157,7 +157,7 @@ export const projects: Project[] = [
       "Accelerates scaffold ranking, molecular linker evaluations, and pocket mappings.",
       "Optimizes traditional pharmacological workflows using fast cloud-native clustering."
     ],
-    imageUrl: "/p_3.png"
+    imageUrl: "./p_3.png"
   },
   {
     id: "proj05",
@@ -171,7 +171,7 @@ export const projects: Project[] = [
       "Demonstrates high contig-assembly accuracy through rigorous computational validation.",
       "Achieves >99% similarity index during direct BLAST query verifications."
     ],
-    imageUrl: "/p_5.png",
+    imageUrl: "./p_5.png",
     status: "THESIS"
   },
   {
@@ -186,7 +186,7 @@ export const projects: Project[] = [
       "Retrieves scientific findings from peer-reviewed databases in real-time.",
       "Allows research clinicians to query target mutation consequences seamlessly."
     ],
-    imageUrl: "/p_6.png"
+    imageUrl: "./p_6.png"
   },
   {
     id: "proj07",
@@ -200,7 +200,7 @@ export const projects: Project[] = [
       "Evaluates generated molecular candidates for mutagenic and pharmacokinetic safety.",
       "Performs highly parallelized virtual screening against critical oncology receptors."
     ],
-    imageUrl: "/p_7.png"
+    imageUrl: "./p_7.png"
   },
   {
     id: "proj08",
@@ -214,7 +214,7 @@ export const projects: Project[] = [
       "Executes comprehensive virtual docking screens utilizing global botanical archives.",
       "Filters molecular libraries against strict brain-barrier penetration parameters."
     ],
-    imageUrl: "/p_8.png",
+    imageUrl: "./p_8.png",
     status: "PUBLISHED",
     linkUrl: "https://doi.org/10.1101/2025.09.05.674389"
   },
@@ -230,7 +230,7 @@ export const projects: Project[] = [
       "Utilizes QIIME2 to perform alpha and beta diversity computational modeling.",
       "Maps metabolic pathway variations to spotlight active autoimmune drivers."
     ],
-    imageUrl: "/p_10.png",
+    imageUrl: "./p_10.png",
     status: "PUBLISHED",
     linkUrl: "https://www.biorxiv.org/content/10.64898/2026.07.25.740724v1"
   },
@@ -246,7 +246,7 @@ export const projects: Project[] = [
       "Implements advanced clustering algorithms to trace cellular differentiation trajectories.",
       "Highlights novel drug-target biomarkers driving fast progression pathways."
     ],
-    imageUrl: "/p_11.png"
+    imageUrl: "./p_11.png"
   },
   {
     id: "proj12",
@@ -260,7 +260,7 @@ export const projects: Project[] = [
       "Models long-term patient prognostic indicators using Cox Proportional Hazard networks.",
       "Validates signature target performance against historic validation groups."
     ],
-    imageUrl: "/p_12.png"
+    imageUrl: "./p_12.png"
   },
   {
     id: "proj13",
@@ -274,7 +274,7 @@ export const projects: Project[] = [
       "Analyzes dynamic genome architecture changes across major breast cancer classes.",
       "Assesses copy-number profiles using robust statistical regression utilities."
     ],
-    imageUrl: "/p_13.png"
+    imageUrl: "./p_13.png"
   },
   {
     id: "proj14",
@@ -288,7 +288,7 @@ export const projects: Project[] = [
       "Applies feature selection techniques to identify predictive biomolecules.",
       "Develops high-classification-accuracy predictive models for early assessment."
     ],
-    imageUrl: "/p_14.png"
+    imageUrl: "./p_14.png"
   },
 
 ];
