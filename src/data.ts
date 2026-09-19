@@ -592,7 +592,7 @@ export const publications: Publication[] = [
   {
     id: "pub_i1",
     key: "I.1",
-    authors: "Amaan Arif",
+    authors: "Dr. Prachi Srivastava, Dr. Shalini Singh Visen, Mr. Amaan Arif, Dr. Prekshi Garg",
     title: "BHOOMITRA",
     subtitle: "AI-Powered Precision Agriculture Decision Support System",
     description: "BHOOMITRA is an intelligent agricultural recommendation platform designed to support data-driven farming decisions. The system integrates soil nutrient profiles, environmental parameters, and machine learning models to recommend optimal crop selection and fertilizer strategies. By enabling personalized agricultural guidance, the platform aims to improve productivity, resource efficiency, and sustainable farming practices.",
