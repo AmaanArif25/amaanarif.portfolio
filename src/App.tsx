@@ -820,7 +820,9 @@ export default function App() {
                       {service.category || 'Service'}
                     </span>
                     {service.period && (
-                      <span className="text-neutral-400 font-semibold">{service.period}</span>
+                      <span className={`font-mono font-semibold text-[9.5px] px-2 py-0.5 rounded ${service.period.includes('Present') ? 'bg-emerald-50 text-emerald-700 border border-emerald-200/70' : 'bg-neutral-100 text-neutral-600'}`}>
+                        {service.period}
+                      </span>
                     )}
                   </div>
 

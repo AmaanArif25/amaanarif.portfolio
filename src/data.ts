@@ -1003,6 +1003,7 @@ export const professionalServices: ProfessionalService[] = [
     id: "ps1",
     role: "Peer Reviewer",
     organization: "PLOS ONE",
+    period: "2024 - Present",
     category: "Peer Review",
     description: "Conducted 11 peer reviews of multidisciplinary research manuscripts spanning artificial intelligence, healthcare, and biomedical applications."
   },
@@ -1010,6 +1011,7 @@ export const professionalServices: ProfessionalService[] = [
     id: "ps2",
     role: "Reviewer",
     organization: "Journal of Open Source Software (JOSS)",
+    period: "2025 - Present",
     category: "Peer Review",
     description: "Contributed to open-science peer review by evaluating research software for scientific relevance, methodological quality, reproducibility, and usability."
   },
@@ -1017,6 +1019,7 @@ export const professionalServices: ProfessionalService[] = [
     id: "ps3",
     role: "Member",
     organization: "NASA GeneLab AI/ML Analysis Working Group",
+    period: "2025 - Present",
     category: "Working Group",
     description: "Contributed to the AI/ML Analysis Working Group focused on computational analysis of space-life-science datasets and open scientific data resources."
   },
@@ -1056,6 +1059,7 @@ export const professionalServices: ProfessionalService[] = [
     id: "ps8",
     role: "Editorial Member",
     organization: "Journal of Psychiatry and Psychological Sciences",
+    period: "2025 - Present",
     category: "Editorial",
     description: "Serving as an editorial member supporting the evaluation and development of interdisciplinary research in psychiatry, psychology, and related health sciences."
   }
