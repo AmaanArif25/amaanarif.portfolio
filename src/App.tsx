@@ -393,14 +393,14 @@ export default function App() {
                     {project.title}
                   </h3>
 
-                  <p className="font-sans text-xs text-neutral-500 mt-2.5 leading-relaxed line-clamp-3 font-normal">
+                  <p className="font-sans text-xs text-neutral-600 mt-2.5 leading-relaxed font-normal text-justify">
                     {project.description}
                   </p>
 
                   <div className="mt-4">
                     <span className="block font-mono text-[9px] uppercase tracking-wider text-clinical-text-muted mb-1.5 font-bold select-none">[Highlights]</span>
-                    <ul className="space-y-1 text-[11px] font-sans text-neutral-600 pl-4 list-disc marker:text-neutral-900 leading-normal">
-                      {project.highlights.slice(0, 2).map((hl, i) => (
+                    <ul className="space-y-1.5 text-[11px] font-sans text-neutral-600 pl-4 list-disc marker:text-neutral-900 leading-normal text-justify">
+                      {project.highlights.map((hl, i) => (
                         <li key={i}>{hl}</li>
                       ))}
                     </ul>

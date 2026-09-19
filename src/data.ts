@@ -147,13 +147,14 @@ export const projects: Project[] = [
     id: "proj01",
     projectNum: "01",
     title: "AI-Based Oral Cancer Screening Device",
-    description: "Developed a multimodal AI system integrating clinical data, medical imaging, and breath biomarkers for non-invasive early oral cancer screening. Designed to support early diagnosis and improve accessibility in resource-limited healthcare settings.",
-    tags: ["Python", "Machine Learning", "Computer Vision", "Healthcare AI", "Multimodal Learning"],
+    description: "Developed a multimodal AI framework for non-invasive oral cancer screening, integrating clinical information, diagnostic medical imaging, and breath-biomarker data to investigate complementary signals for early disease detection.",
+    tags: ["Python", "NumPy", "Pandas", "scikit-learn", "PyTorch", "TensorFlow", "Matplotlib", "Medical Image Processing", "Multimodal Integration"],
     category: "Clinical Diagnostics",
     highlights: [
-      "Integrates diagnostic medical imaging and breath biomarkers.",
-      "Aims to improve access and early detection in remote settings.",
-      "Patent-derived device mapping [I.4] and copyrighted SMIRITI software [I.2]."
+      "Curated and preprocessed heterogeneous datasets from public medical repositories and hospital-supported clinical data collection, collaborating with an oncologist at Command Hospital, Lucknow, to support clinically informed data preparation and validation.",
+      "Implemented machine-learning and deep-learning pipelines using Python, NumPy, Pandas, scikit-learn, PyTorch and TensorFlow for feature processing, image analysis, multimodal learning and predictive-model development.",
+      "Designed an interpretable evaluation workflow using statistical analysis and visualization to assess model performance and identify clinically relevant patterns across imaging, clinical and breath-derived features.",
+      "Patent-derived device mapping [I.4]"
     ],
     imageUrl: "./p_1.png",
     status: "PATENTED"
@@ -161,30 +162,31 @@ export const projects: Project[] = [
   {
     id: "proj02",
     projectNum: "02",
-    title: "Metabolism-Aware Skin Toxicity Prediction Platform",
-    description: "Built a multi-task machine learning framework for predicting multiple classes of skin toxicity in biomimetic compounds and their metabolites. Integrated adverse outcome pathways (AOPs) to generate interpretable toxicity risk scores.",
-    tags: ["Python", "Machine Learning", "Toxicogenomics", "QSAR", "Explainable AI"],
+    title: "Metabolism-Aware Machine Learning for Skin Toxicity Prediction",
+    description: "Developed a multi-task machine-learning framework to predict skin-toxicity endpoints while accounting for metabolic transformation, integrating parent compounds with experimentally reported metabolites to capture metabolism-dependent toxicological risk.",
+    tags: ["Python", "RDKit", "scikit-learn", "PubChem", "ADMETlab", "SwissADME", "BIOVIA Discovery Studio", "BioTransformer", "AOP-Wiki/AOP Knowledge Base"],
     category: "Computational Toxicology",
     highlights: [
-      "Calculates skin-permeation and metabolic compound transformation rates.",
-      "Delivers interpretable, multi-class risk indexes based on molecular descriptors.",
-      "Aligned with Adverse Outcome Pathways (AOP) for regulatory safety clearances."
+      "Curated compound and metabolite datasets from PubChem and the human metabolite database, generating molecular representations and physicochemical descriptors with RDKit for downstream predictive modelling.",
+      "Integrated skin-permeation, ADMET and toxicity profiles using ADMETlab, SwissADME and licensed BIOVIA Discovery Studio, alongside Biotransformer-based metabolite prediction to evaluate compound–metabolite safety profiles.",
+      "Mapped predicted toxicity outcomes to Adverse Outcome Pathways (AOPs) using the AOP-Wiki/AOP Knowledge Base, connecting molecular-level predictions with mechanistic toxicological processes and prioritizing compounds for further investigation."
     ],
     imageUrl: "./p_2.png"
   },
   {
     id: "proj03",
     projectNum: "03",
-    title: "AI-Driven Drug Repurposing & Chemical Space Analysis",
-    description: "Developed ML pipelines for drug repurposing, scaffold discovery, linker design, and chemical space exploration using clinically approved compounds to identify novel therapeutic opportunities.",
-    tags: ["Python", "Cheminformatics", "Machine Learning", "RDKit", "Drug Discovery"],
+    title: "AI-Driven Drug Repurposing, Chemical Space Mapping & RNA Off-Target Profiling",
+    description: "Developed an AI-enabled cheminformatics pipeline for drug repurposing and chemical-space analysis, integrating public compound records from PubChem with standardized molecular representations and 2D/3D structures generated using Open Babel and RDKit.",
+    tags: ["Python", "RDKit", "Open Babel", "scikit-learn", "PCA/t-SNE/UMAP", "TMAP/GTM", "AutoDock Vina", "ADMETlab", "SwissADME"],
     category: "Cheminformatics",
     highlights: [
-      "Screens approved clinical compounds to map novel binding affinities.",
-      "Accelerates scaffold ranking, molecular linker evaluations, and pocket mappings.",
-      "Optimizes traditional pharmacological workflows using fast cloud-native clustering."
+      "Computed physicochemical descriptors and molecular fingerprints including LogP, molecular weight, TPSA, H-bonding features, ECFP and MACCS fingerprints, followed by PCA, t-SNE and UMAP to characterize chemical diversity and identify structurally related compound regions.",
+      "Extracted Bemis–Murcko scaffolds and applied hierarchical clustering to identify recurrent chemotypes, evaluate scaffold diversity and prioritize structurally distinct drug-like candidates using Lipinski and ADMET-based filters.",
+      "Established an RNA off-target de-risking workflow combining Tanimoto similarity against known RNA-binding compounds, docking with AutoDock Vina, and ML-based classification using Random Forest, Gradient Boosting, SVM and XGBoost to prioritize compounds for multi-target virtual screening."
     ],
-    imageUrl: "./p_3.png"
+    imageUrl: "./p_3.png",
+    status: "UNDER PUBLICATION"
   },
   {
     id: "proj05",
