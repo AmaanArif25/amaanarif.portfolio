@@ -7,7 +7,8 @@ import {
   SkillCategory,
   LeadershipActivity,
   Workshop,
-  Snapshot
+  Snapshot,
+  ProfessionalService
 } from './types';
 
 export const personalInfo = {
@@ -995,4 +996,67 @@ export const editorialActivities = [
   "Editor, 'Artificial Intelligence and Computational Biology in Healthcare Genomics, Public Health and Microbiome'",
   "ASM Global Outreach Contributing Member, American Society for Microbiology (2025 - Present)",
   "External Reviewer, PLOS ONE Journal (Refereed and verified 11 high-impact manuscript reviews 2024 - Present)"
+];
+
+export const professionalServices: ProfessionalService[] = [
+  {
+    id: "ps1",
+    role: "Peer Reviewer",
+    organization: "PLOS ONE",
+    category: "Peer Review",
+    description: "Conducted 11 peer reviews of multidisciplinary research manuscripts spanning artificial intelligence, healthcare, and biomedical applications."
+  },
+  {
+    id: "ps2",
+    role: "Reviewer",
+    organization: "Journal of Open Source Software (JOSS)",
+    category: "Peer Review",
+    description: "Contributed to open-science peer review by evaluating research software for scientific relevance, methodological quality, reproducibility, and usability."
+  },
+  {
+    id: "ps3",
+    role: "Member",
+    organization: "NASA GeneLab AI/ML Analysis Working Group",
+    category: "Working Group",
+    description: "Contributed to the AI/ML Analysis Working Group focused on computational analysis of space-life-science datasets and open scientific data resources."
+  },
+  {
+    id: "ps4",
+    role: "Global Outreach Contributing Member",
+    organization: "American Society for Microbiology (ASM)",
+    period: "2025 - Present",
+    category: "Outreach",
+    description: "Contributed to ASM's international scientific community supporting global outreach in microbiology, infectious disease research, and public health."
+  },
+  {
+    id: "ps5",
+    role: "Conference Peer Reviewer",
+    organization: "ICECER 2026 & ICECCME 2026",
+    period: "2026",
+    category: "Peer Review",
+    description: "Reviewed research spanning deep learning, medical image classification, digital-twin robustness, healthcare recommendation systems, and computer vision, providing technical assessment of methodology and scientific contribution."
+  },
+  {
+    id: "ps6",
+    role: "Conference Peer Reviewer",
+    organization: "ACDSA 2026",
+    period: "2026",
+    category: "Peer Review",
+    description: "Evaluated research on RGB-assisted depth completion, LiDAR-based manufacturing vision, large-language-model applications, and reinforcement learning for technical quality and applicability."
+  },
+  {
+    id: "ps7",
+    role: "Conference Peer Reviewer",
+    organization: "ICECET 2026",
+    period: "2026",
+    category: "Peer Review",
+    description: "Reviewed studies involving deep-learning-based disease diagnosis and AI-driven personalized nutrition, assessing computational methodology, model application, and research contribution."
+  },
+  {
+    id: "ps8",
+    role: "Editorial Member",
+    organization: "Journal of Psychiatry and Psychological Sciences",
+    category: "Editorial",
+    description: "Serving as an editorial member supporting the evaluation and development of interdisciplinary research in psychiatry, psychology, and related health sciences."
+  }
 ];

@@ -86,3 +86,13 @@ export interface Snapshot {
   desc: string;
   symbol: string; // We can use elegant structured designs as mock snapshots
 }
+
+export interface ProfessionalService {
+  id: string;
+  role: string;
+  organization: string;
+  period?: string;
+  category?: 'Peer Review' | 'Working Group' | 'Editorial' | 'Outreach';
+  description: string;
+}
+

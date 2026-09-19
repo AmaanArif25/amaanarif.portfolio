@@ -10,7 +10,8 @@ import {
   leadershipActivities,
   workshops,
   snapshots,
-  editorialActivities
+  editorialActivities,
+  professionalServices
 } from './data';
 import {
   BookOpen,
@@ -162,7 +163,8 @@ export default function App() {
           <a href="#research" className="text-clinical-text-muted hover:text-clinical-text-main transition-colors">[04/ PROJECTS]</a>
           <a href="#skills" className="text-clinical-text-muted hover:text-clinical-text-main transition-colors">[05/ SKILLS]</a>
           <a href="#publications" className="text-clinical-text-muted hover:text-clinical-text-main transition-colors">[06/ PUBLICATIONS]</a>
-          <a href="#contact" className="text-clinical-text-muted hover:text-clinical-text-main transition-colors">[07/ COLLAB]</a>
+          <a href="#service" className="text-clinical-text-muted hover:text-clinical-text-main transition-colors">[07/ SERVICE]</a>
+          <a href="#contact" className="text-clinical-text-muted hover:text-clinical-text-main transition-colors">[08/ COLLAB]</a>
         </div>
 
         <div className="flex items-center space-x-4 font-mono text-[10px] text-clinical-text-muted">
@@ -795,13 +797,57 @@ export default function App() {
         </section>
 
         {/* ========================================================
-            7. CONTACT & FOOTER (Sterile form with mesh background)
+            7. PROFESSIONAL SERVICE (Peer Review, Editorial & Working Groups)
+            ======================================================== */}
+        <section id="service" className="scroll-mt-24 space-y-6">
+          <ScrollReveal>
+            <div className="border-b border-clinical-border pb-6 mb-10">
+              <h2 className="font-sans text-3xl font-bold tracking-tight text-clinical-text-main">
+                07 - Professional Service
+              </h2>
+            </div>
+          </ScrollReveal>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-6">
+            {professionalServices.map((service) => (
+              <div
+                key={service.id}
+                className="bg-white border border-clinical-border rounded-lg p-5 shadow-sm hover:border-neutral-800 transition-all duration-200 flex flex-col justify-between"
+              >
+                <div>
+                  <div className="flex items-center justify-between gap-2 border-b border-dashed border-clinical-border pb-2.5 mb-3 font-mono text-[10px]">
+                    <span className="bg-neutral-100 text-neutral-700 font-bold px-2 py-0.5 rounded-sm uppercase tracking-wider text-[9px]">
+                      {service.category || 'Service'}
+                    </span>
+                    {service.period && (
+                      <span className="text-neutral-400 font-semibold">{service.period}</span>
+                    )}
+                  </div>
+
+                  <h3 className="font-sans font-bold text-base text-neutral-900 leading-snug">
+                    {service.role}
+                    <span className="text-neutral-500 font-normal text-xs block sm:inline sm:ml-1.5">
+                      @ {service.organization}
+                    </span>
+                  </h3>
+
+                  <p className="font-sans text-xs text-neutral-600 mt-2.5 leading-relaxed text-justify">
+                    {service.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* ========================================================
+            8. CONTACT & FOOTER (Sterile form with mesh background)
             ======================================================== */}
         <section id="contact" className="scroll-mt-24 space-y-6 pb-12">
           <ScrollReveal>
             <div className="border-b border-clinical-border pb-6 mb-10">
               <h2 className="font-sans text-3xl font-bold tracking-tight text-clinical-text-main">
-                07 - Contact
+                08 - Contact
               </h2>
             </div>
           </ScrollReveal>
