@@ -614,7 +614,7 @@ export default function App() {
               <div className="bg-white border border-clinical-border rounded-lg overflow-hidden shadow-sm divide-y divide-clinical-border">
                 {matchedConferences.length > 0 ? (
                   (() => {
-                    const featuredIds = ['pub_c1', 'pub_c2', 'pub_c3', 'pub_c11'];
+                    const featuredIds = ['pub_c_eurobioc2026', 'pub_c_iabscon2026', 'pub_c1', 'pub_c2', 'pub_c3', 'pub_c11'];
                     const featured = matchedConferences.filter(c => featuredIds.includes(c.id));
                     const fallbackOther = matchedConferences.filter(c => !featuredIds.includes(c.id));
 
@@ -642,6 +642,12 @@ export default function App() {
                             <p className="font-sans text-xs text-neutral-500 mt-2 leading-relaxed">
                               <span className="font-semibold text-neutral-700">Authors:</span> {renderAuthors(pub.authors)} | <span className="font-semibold text-neutral-700">Source:</span> <span className="italic">{pub.source}</span>
                             </p>
+
+                            {pub.description && (
+                              <p className="font-sans text-xs text-neutral-600 mt-2 leading-relaxed text-justify">
+                                {pub.description}
+                              </p>
+                            )}
                           </div>
                         ))}
 
@@ -662,6 +668,12 @@ export default function App() {
                             <p className="font-sans text-[11px] text-neutral-500 mt-1.5 leading-relaxed">
                               <span className="font-semibold text-neutral-600">Authors:</span> {renderAuthors(pub.authors)} | <span className="font-semibold text-neutral-600">Source:</span> <span className="italic text-neutral-600">{pub.source}</span>
                             </p>
+
+                            {pub.description && (
+                              <p className="font-sans text-xs text-neutral-600 mt-2 leading-relaxed text-justify">
+                                {pub.description}
+                              </p>
+                            )}
                           </div>
                         ))}
 

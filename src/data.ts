@@ -436,124 +436,158 @@ export const publications: Publication[] = [
     doi: "https://ibn.idsi.md/sites/default/files/imag_file/14.%20ARTUKLU%20PROCEEDINGS%20BOOK_compressed-2.pdf"
   },
   {
-    id: "pub_c1",
+    id: "pub_c_eurobioc2026",
     key: "C.1",
     authors: "Amaan Arif",
-    title: "Machine Learning-Driven Framework for Precision Crop and Fertilizer Recommendation Using Soil and Climatic Parameters",
-    source: "International Conference on Smart Agriculture, Healthcare, and Sustainable Energy (ICSAHSE-2026), Chandigarh University",
-    date: "Feb 03-05, 2026",
+    title: "Altered Gut Microbiome Composition of Streptococcaceae and Lachnospiraceae in Multiple Sclerosis Patients",
+    source: "EuroBioC 2026",
+    date: "June 3-5, 2026",
     type: "conference",
-    status: "In-Person Oral Presentation"
+    status: "Poster Presentation · Abstract Selected · Fully Funded",
+    description: "Presented an abstract-selected poster on cross-cohort gut microbiome alterations in Multiple Sclerosis, highlighting disease-associated changes in Streptococcaceae and Lachnospiraceae and communicating computational microbiome findings to an international bioinformatics research audience."
+  },
+  {
+    id: "pub_c_iabscon2026",
+    key: "C.2",
+    authors: "Amaan Arif",
+    title: "Altered Gut Microbiome Composition of Streptococcaceae and Lachnospiraceae in Multiple Sclerosis Patients",
+    source: "IABSCON 2026 - XIV Annual Conference of the Indian Academy of Biomedical Sciences, BITS Pilani, K. K. Birla Goa Campus, Goa, India",
+    date: "24-26 Mar 2026",
+    type: "conference",
+    status: "Poster Presentation · Abstract Selected · Fully Funded",
+    description: "Presented research on altered gut microbiome composition of Streptococcaceae and Lachnospiraceae in Multiple Sclerosis, communicating microbiome profiling findings from human 16S rRNA sequencing data at an international biomedical research conference; also participated in the associated CME programme on hands-on meta-analysis in biomedical sciences."
+  },
+  {
+    id: "pub_c1",
+    key: "C.3",
+    authors: "Amaan Arif",
+    title: "Machine Learning-Driven Framework for Precision Crop and Fertilizer Recommendation Using Soil and Climatic Parameters",
+    source: "ICSAHSE 2026 - International Conference on Smart Agriculture, Healthcare & Sustainable Energy, Chandigarh University, Punjab, India",
+    date: "03-05 Feb 2026",
+    type: "conference",
+    status: "Poster Presentation · Research Work",
+    description: "Presented an original machine-learning framework for precision crop and fertilizer recommendation, integrating soil and climatic parameters to develop a data-driven approach for agricultural decision-making and demonstrating the application of computational methods to biological and environmental datasets."
   },
   {
     id: "pub_c2",
-    key: "C.2",
+    key: "C.4",
     authors: "Amaan Arif",
     title: "AI-Powered Toxicity Profiling of Veterinary Drugs and Feed Additives: A Predictive Framework for Livestock Safety",
     source: "2nd World Congress on Animal Science & Veterinary Medicine, Bangkok, Thailand",
-    date: "Nov 03-04, 2025",
+    date: "03-04 Nov 2025",
     type: "conference",
-    status: "Virtual Oral Presentation"
+    status: "Virtual Oral Presentation · Fully Funded Registration",
+    description: "Presented an AI-driven framework for toxicity profiling of veterinary drugs and feed additives, applying computational prediction approaches to investigate chemical safety and support data-driven risk assessment in livestock health."
   },
   {
     id: "pub_c3",
-    key: "C.3",
+    key: "C.5",
     authors: "Amaan Arif",
     title: "AI-Driven Linguistic Modelling for Neurodevelopmental Disorders",
     source: "5th International Paris Congress on Applied Sciences, Paris, France",
     date: "Aug 04-08, 2025",
     type: "conference",
-    status: "Virtual Oral Presentation"
+    status: "Virtual Presentation · Fully Funded Registration",
+    description: "Presented research on AI-driven linguistic modelling for neurodevelopmental disorders, exploring computational language modelling approaches for the analysis and prediction of disorder-associated patterns."
   },
   {
     id: "pub_c8",
-    key: "C.8",
+    key: "C.6",
     authors: "Amaan Arif",
     title: "Role of Cloud Computing in High-Throughput Genome Assembly",
-    source: "ICETIT-25, Amity University Uttar Pradesh, Lucknow",
+    source: "ICETIT-25 - International Conference on Emerging Trends in Information Technology, Amity University Uttar Pradesh, Lucknow",
     date: "24-25 April 2025",
     type: "conference",
-    status: "Virtual Presentation"
+    status: "Virtual Presentation · Review Research",
+    description: "Presented a review on the role of cloud computing in high-throughput genome assembly, synthesizing computational approaches for scalable genomic-data processing and connecting the work with undergraduate thesis research."
   },
   {
     id: "pub_c4",
-    key: "C.4",
+    key: "C.7",
     authors: "Amaan Arif",
     title: "AI-Powered Toxicity Prediction: Transforming Chemical Risk Assessment with Machine Learning Models",
-    source: "7th International İstanbul Contemporary Scientific Research Congress, İstanbul, Turkey",
+    source: "7th International İstanbul Contemporary Scientific Research Congress, İstanbul, Türkiye",
     date: "2025",
     type: "conference",
-    status: "Virtual Presentation"
+    status: "Virtual Presentation · Fully Funded",
+    description: "Presented an AI-based toxicity-prediction framework for chemical risk assessment, investigating machine-learning approaches for computational toxicology and predictive evaluation of chemical safety."
   },
   {
     id: "pub_c5",
-    key: "C.5",
+    key: "C.8",
     authors: "Amaan Arif",
     title: "Deep Sight: Revolutionizing Eye Disease Diagnosis through Advanced CNN-Based Retinal Image Classification",
     source: "4th International Conference on Material Science & Engineering, Vienna, Austria",
     date: "2025",
     type: "conference",
-    status: "Virtual Presentation"
+    status: "Virtual Presentation · Independent Research",
+    description: "Presented \"Deep Sight: Revolutionizing Eye Disease Diagnosis through Advanced CNN-Based Retinal Image Classification,\" demonstrating the application of convolutional neural networks to automated medical-image classification and computational disease screening."
   },
   {
     id: "pub_c6",
-    key: "C.6",
+    key: "C.9",
     authors: "Amaan Arif",
     title: "Revolutionizing Ophthalmology with Deep Learning: Automated Retinal Image Classification for Disease Diagnosis",
-    source: "3rd European Congress on Biomedical Science and Engineering, Vienna, Austria",
+    source: "3rd European Congress on Biomedical Science & Engineering, Vienna, Austria",
     date: "2025",
     type: "conference",
-    status: "Virtual Presentation"
+    status: "Virtual Presentation · Research Presentation",
+    description: "Presented research on deep-learning-based retinal image classification for ophthalmic disease diagnosis, developing a computational imaging approach for automated disease recognition from retinal photographs."
   },
   {
     id: "pub_c7",
-    key: "C.7",
+    key: "C.10",
     authors: "Amaan Arif",
     title: "Deep Learning in Neuroomics: Advances in Brain Mapping and Disease Prediction",
     source: "14th International Mardin Artuklu Scientific Researches Conference, Mardin, Türkiye",
     date: "2025",
     type: "conference",
-    status: "Virtual Presentation"
+    status: "Symposium Presentation · Independent Review Research",
+    description: "Presented a review on deep learning in neuroomics, examining computational approaches for brain mapping, neurobiological data analysis and disease-prediction applications."
   },
   {
     id: "pub_c9",
-    key: "C.9",
+    key: "C.11",
     authors: "Amaan Arif",
     title: "Microbiota and AI",
-    source: "International Scientific Symposium on Health and Environment, CSIR-IITR, Lucknow",
+    source: "International Scientific Symposium on Health & Environment, CSIR-IITR, Lucknow, India",
     date: "2025",
     type: "conference",
-    status: "Symposium Presentation"
-  },
-  {
-    id: "pub_c10",
-    key: "C.10",
-    authors: "Amaan Arif",
-    title: "Transcriptome Network Biology Reveals the Neuroprotective Potential of Rosmarinic Acid Against Frontotemporal Dementia",
-    source: "International Conference on Integrating AI, Spirituality, Health Care & Management, Amity University, Lucknow",
-    date: "2025",
-    type: "conference",
-    status: "Oral Presentation"
+    status: "Oral Presentation · Poster/Research Communication",
+    description: "Presented \"Microbiota and AI,\" synthesizing microbiome research from undergraduate research training and examining the application of artificial intelligence to microbiome-associated biomedical investigations."
   },
   {
     id: "pub_c11",
-    key: "C.11",
+    key: "C.12",
     authors: "Amaan Arif",
     title: "Transcriptomic Profiling Reveals the Key Role of the HDAC1 Gene in Frontotemporal Dementia",
-    source: "4th Edition of International Symposium on Amyloidosis (ISAD-2023), Barcelona, Spain",
+    source: "ISAD 2023 - Innovations and State of the Art in Alzheimer's & Dementia, Barcelona, Spain",
     date: "2023",
     type: "conference",
-    status: "Virtual Presentation"
+    status: "International Conference · Research Presentation · Selected/Fully Funded",
+    description: "Presented \"Transcriptomic Profiling Reveals the Key Role of the HDAC1 Gene in Frontotemporal Dementia,\" reporting transcriptome-based investigation of disease-associated molecular signatures and candidate regulatory mechanisms."
+  },
+  {
+    id: "pub_c10",
+    key: "C.13",
+    authors: "Amaan Arif",
+    title: "Transcriptome Network Biology Reveals the Neuroprotective Potential of Rosmarinic Acid Against Frontotemporal Dementia",
+    source: "International Conference on Integrating AI, Spirituality, Health Care & Management, Amity University Uttar Pradesh, Lucknow",
+    date: "2023",
+    type: "conference",
+    status: "Oral Presentation · Research Presentation",
+    description: "Presented \"Transcriptome Network Biology Reveals the Neuroprotective Potential of Rosmarinic Acid Against Frontotemporal Dementia,\" communicating findings from a 45-day research internship integrating transcriptomic and network-biology approaches with computational phytochemical investigation."
   },
   {
     id: "pub_c12",
-    key: "C.12",
+    key: "C.14",
     authors: "Amaan Arif",
     title: "Machine Learning-Based Dementia Prediction Using Clinical Data: Non-Invasive Approach for Early Detection and Management",
-    source: "International Conference on Neurology and Neuro Disorders, Amity University Noida with IUPUI, USA",
+    source: "International Conference on Neurology and Neuro Disorders, Amity University Noida & IUPUI, USA",
     date: "2023",
     type: "conference",
-    status: "Oral Presentation"
+    status: "Oral Presentation · Fully Funded",
+    description: "Presented a machine-learning-based approach for dementia prediction using clinical data, investigating non-invasive computational strategies for identifying disease-associated patterns and supporting early-risk assessment."
   },
   {
     id: "pub_i1",
