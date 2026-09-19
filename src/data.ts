@@ -206,42 +206,44 @@ export const projects: Project[] = [
   {
     id: "proj06",
     projectNum: "06",
-    title: "Genomic Variant Classification & RAG Pipeline",
-    description: "Fine-tuned BioBERT for genomic variant classification and developed a Retrieval-Augmented Generation (RAG) system using vector databases for genomic knowledge retrieval and interpretation.",
-    tags: ["BioBERT", "Pinecone", "Streamlit", "Transformers", "RAG"],
-    category: "Bioinformatics",
+    title: "OncoGenRAG: AI-Based Genomic Variant Classification & Evidence Retrieval",
+    description: "Developed OncoGenRAG, an oncology-focused RAG framework integrating parameter-efficient BioBERT fine-tuning with entity-aware retrieval for genomic variant classification and evidence-grounded interpretation.",
+    tags: ["BioBERT", "RAG", "Transformers", "Genomics", "NLP", "Oncology"],
+    category: "Bioinformatics & Generative AI",
     highlights: [
-      "Classifies genomic variants with deep contextual embeddings using BioBERT.",
-      "Retrieves scientific findings from peer-reviewed databases in real-time.",
-      "Allows research clinicians to query target mutation consequences seamlessly."
+      "Curated and harmonized 933 records from CIViC, ClinVar/dbSNP, Open Targets, UniProtKB/Swiss-Prot, Ensembl Variation and linked PubMed literature into a multi-source oncology knowledge base.",
+      "Fine-tuned BioBERT to classify variants into five clinical categories that includes Pathogenic, Likely Pathogenic, Variant of Uncertain Significance, Benign and Oncogenic, achieving 92.40% accuracy and 92.65% weighted F1 on held-out evaluation.",
+      "Implemented evidence-aware retrieval using TF-IDF similarity and explicit gene, variant and cancer-type matching, achieving 94.5% Precision@1, 96.8% Precision@3 and 100% database grounding across 100 clinical-style queries."
     ],
-    imageUrl: "./p_6.png"
+    imageUrl: "./p_6.png",
+    status: "UNDER PUBLICATION"
   },
   {
     id: "proj07",
     projectNum: "07",
-    title: "De Novo Drug Design for Colorectal Cancer",
-    description: "Designed novel drug candidates by extracting non-toxic pharmacophore scaffolds from approved colorectal cancer drugs and generating optimized therapeutic molecules.",
-    tags: ["RDKit", "DrugBank", "Molecular Design", "Machine Learning", "Cheminformatics"],
+    title: "AI-Assisted De Novo Drug Design for Colorectal Cancer",
+    description: "Developed a computational drug-design workflow for colorectal cancer by mining approved therapeutics and reported bioactivity data from DrugBank, ChEMBL, Open Targets and BindingDB to establish disease-relevant chemical and target spaces.",
+    tags: ["Python", "RDKit", "DrugBank", "ChEMBL", "Open Targets", "BindingDB", "BIOVIA Discovery Studio", "ADMETlab"],
     category: "Onco-Cheminformatics",
     highlights: [
-      "Extracts therapeutic sub-structures and scaffolds from the public DrugBank registry.",
-      "Evaluates generated molecular candidates for mutagenic and pharmacokinetic safety.",
-      "Performs highly parallelized virtual screening against critical oncology receptors."
+      "Extracted drug-like scaffolds and pharmacophoric features from approved colorectal cancer therapeutics using RDKit and BIOVIA Discovery Studio to guide structure-informed generation and optimization of candidate molecules.",
+      "Generated and screened candidate structures against physicochemical, drug-likeness and pharmacokinetic criteria, applying Lipinski-based filters and ADMETlab/BIOVIA toxicity assessments to remove unfavorable compounds.",
+      "Prioritized non-toxic, drug-like candidates for further computational evaluation, using structural similarity, pharmacophore compatibility and predicted ADMET profiles to support rational lead selection."
     ],
-    imageUrl: "./p_7.png"
+    imageUrl: "./p_7.png",
+    status: "UNDER PUBLICATION"
   },
   {
     id: "proj08",
     projectNum: "08",
     title: "Frontotemporal Dementia Phytochemical Discovery Platform",
-    description: "Performed transcriptomic and network biology analysis to identify neuroprotective phytochemicals against Frontotemporal Dementia, leading to a bioRxiv publication. Evaluated phytochemicals from Indian spices using drug-likeness screening, toxicity prediction, molecular docking, and target interaction analysis for neurological disorders.",
-    tags: ["R", "Transcriptomics", "Network Biology", "RNA-Seq", "Systems Biology", "Molecular Docking", "Drug Discovery"],
+    description: "Investigated molecular mechanisms and therapeutic opportunities in Frontotemporal Dementia (FTD) by integrating transcriptomic analysis, network biology and structure-based drug discovery to identify disease-associated targets and potential neuroprotective phytochemicals.",
+    tags: ["R/Python", "GEO", "DESeq2", "Cytoscape", "CytoHubba", "PubChem", "PDB", "BIOVIA Discovery Studio", "PyMOL", "AutoDock Vina", "PLIP", "ADMETlab 3.0"],
     category: "Neurogenomics",
     highlights: [
-      "Published bioRxiv preprint linking transcriptional profiles to Rosmarinic Acid target mechanisms.",
-      "Executes comprehensive virtual docking screens utilizing global botanical archives.",
-      "Filters molecular libraries against strict brain-barrier penetration parameters."
+      "Analyzed FTD transcriptomic datasets from GEO to identify differentially expressed genes and constructed protein-interaction networks, applying Cytoscape/CytoHubba to prioritize hub genes implicated in disease-associated molecular pathways.",
+      "Curated neuroactive phytochemicals reported from Indian spices using PubChem and screened candidates using molecular weight, LogP, H-bonding properties, Lipinski's Rule of Five, Veber criteria and ADMETlab 3.0 to prioritize drug-like compounds with favorable predicted pharmacokinetic and toxicity profiles.",
+      "Mapped prioritized genes to experimentally determined protein structures from PDB and performed structure-based virtual screening, preparing receptors with BIOVIA Discovery Studio/PyMOL and running automated ligand docking with AutoDock Vina, followed by interaction analysis using PLIP; Rosmarinic acid emerged as a prioritized phytochemical based on predicted receptor-binding interactions."
     ],
     imageUrl: "./p_8.png",
     status: "PUBLISHED",
@@ -251,13 +253,13 @@ export const projects: Project[] = [
     id: "proj10",
     projectNum: "10",
     title: "Multiple Sclerosis Microbiome Analysis",
-    description: "Conducted microbiome profiling and diversity analysis using QIIME2 to investigate microbial signatures associated with Multiple Sclerosis.",
-    tags: ["QIIME2", "Metagenomics", "Microbiome", "Python", "Biostatistics"],
+    description: "Investigated disease-associated alterations in the gut microbiome of Multiple Sclerosis (MS) patients by analyzing publicly available 16S rRNA sequencing datasets from MS patients and healthy controls.",
+    tags: ["QIIME2", "DADA2", "16S rRNA", "Microbiome", "PERMANOVA", "Kruskal–Wallis", "ANCOM", "Metagenomics"],
     category: "Metagenomics",
     highlights: [
-      "Identifies specific dysbiosis indicators correlated with patient clinical metrics.",
-      "Utilizes QIIME2 to perform alpha and beta diversity computational modeling.",
-      "Maps metabolic pathway variations to spotlight active autoimmune drivers."
+      "Processed raw microbiome sequencing data through a standardized QIIME2 workflow, incorporating quality control, denoising, taxonomic assignment and phylogenetic reconstruction to characterize microbial community composition.",
+      "Quantified microbial diversity and community structure using alpha- and beta-diversity analyses, applying statistical testing including PERMANOVA and Kruskal–Wallis to assess differences between MS and control groups.",
+      "Identified disease-associated microbial taxa using differential-abundance analysis with ANCOM, generating reproducible microbiome signatures that supported subsequent cross-cohort investigation of MS-associated dysbiosis."
     ],
     imageUrl: "./p_10.png",
     status: "PUBLISHED",
@@ -267,13 +269,13 @@ export const projects: Project[] = [
     id: "proj11",
     projectNum: "11",
     title: "Single-Cell Transcriptomics of Rhabdomyosarcoma",
-    description: "Analyzed single-cell RNA sequencing datasets to identify tumor heterogeneity, cellular subpopulations, and molecular pathways involved in Rhabdomyosarcoma progression.",
-    tags: ["Seurat", "scRNA-seq", "R", "Single Cell Biology", "Bioinformatics"],
+    description: "Characterized cellular heterogeneity in Rhabdomyosarcoma using publicly available single-cell RNA-sequencing datasets, profiling malignant, immune and stromal populations to investigate the cellular architecture underlying tumor progression.",
+    tags: ["R", "Python", "Seurat", "Scanpy", "SingleR", "Azimuth", "inferCNV", "PCA/UMAP", "ssGSEA", "GEO"],
     category: "Cancer Biology",
     highlights: [
-      "Extracts individual cellular transcript signatures to model sarcoma tumor structures.",
-      "Implements advanced clustering algorithms to trace cellular differentiation trajectories.",
-      "Highlights novel drug-target biomarkers driving fast progression pathways."
+      "Processed and analyzed single-cell transcriptomes using Seurat and Scanpy, performing quality control, normalization, highly variable gene selection, dimensionality reduction and unsupervised clustering to resolve distinct cellular populations.",
+      "Annotated cell populations using SingleR/Azimuth and inferred large-scale copy-number alterations with inferCNV, distinguishing malignant tumor cells from non-malignant immune and stromal compartments.",
+      "Integrated pathway-level analysis using ssGSEA to characterize transcriptional programs associated with tumor progression, identifying cell-state-specific pathways and candidate molecular targets for further investigation."
     ],
     imageUrl: "./p_11.png"
   },
@@ -281,13 +283,13 @@ export const projects: Project[] = [
     id: "proj12",
     projectNum: "12",
     title: "Prostate Cancer Survival & Biomarker Discovery",
-    description: "Performed differential gene expression, machine learning-based biomarker selection, and survival analysis using TCGA and GEO datasets for prostate cancer prognosis.",
-    tags: ["TCGA", "GEO", "Machine Learning", "Survival Analysis", "R"],
+    description: "Investigated molecular biomarkers associated with prostate cancer prognosis by integrating transcriptomic datasets from GEO with TCGA clinical and gene-expression data to identify disease-associated molecular signatures.",
+    tags: ["R", "Python", "limma", "TCGAbiolinks", "survival", "survminer", "Kaplan-Meier", "Cox Proportional Hazards", "Machine Learning"],
     category: "Oncology Data Science",
     highlights: [
-      "Ingests raw TCGA and GEO patient dataset files to locate diagnostic biomarkers.",
-      "Models long-term patient prognostic indicators using Cox Proportional Hazard networks.",
-      "Validates signature target performance against historic validation groups."
+      "Performed differential gene-expression analysis using limma and TCGAbiolinks, followed by functional and network-level analysis to identify candidate genes with potential diagnostic or prognostic relevance.",
+      "Developed and optimized machine-learning models for biomarker selection, applying repeated hyperparameter tuning and model evaluation to identify robust transcriptomic features associated with patient outcomes.",
+      "Evaluated prognostic associations using Kaplan–Meier and Cox proportional-hazards survival analyses, estimating survival differences, hazard ratios and prognostic performance across independent patient groups."
     ],
     imageUrl: "./p_12.png"
   },
@@ -295,13 +297,13 @@ export const projects: Project[] = [
     id: "proj13",
     projectNum: "13",
     title: "Breast Cancer Copy Number Alteration Analysis",
-    description: "Investigated genomic copy number alterations and their association with breast cancer progression and molecular subtypes using large-scale cancer datasets.",
-    tags: ["Cancer Genomics", "TCGA", "Copy Number Analysis", "R", "Bioinformatics"],
+    description: "Investigated genomic copy-number alterations associated with breast cancer progression and molecular subtypes, integrating segmented CNA profiles with clinical outcomes and PAM50 subtype information.",
+    tags: ["R", "Python", "TCGA", "ggplot2", "matplotlib", "survival", "Cox Regression", "Pathway Enrichment", "Cancer Genomics"],
     category: "Cancer Genomics",
     highlights: [
-      "Maps chromosomal duplications and deletions linked to tumor recurrence risks.",
-      "Analyzes dynamic genome architecture changes across major breast cancer classes.",
-      "Assesses copy-number profiles using robust statistical regression utilities."
+      "Processed patient-level copy-number segments using Python/R workflows to identify recurrent chromosomal amplifications and deletions and quantify genomic instability across Luminal A, Luminal B, HER2-enriched and Basal-like tumors.",
+      "Mapped recurrent CNA regions to candidate genes and functional pathways, evaluating the biological relevance of altered genomic regions through enrichment analysis and identifying alterations associated with tumor-specific molecular programs.",
+      "Integrated CNA profiles with clinical outcomes using survival and Cox regression analyses, evaluating the prognostic relevance of recurrent copy-number patterns and characterizing differences in genomic architecture across breast cancer subtypes."
     ],
     imageUrl: "./p_13.png"
   },
@@ -309,13 +311,13 @@ export const projects: Project[] = [
     id: "proj14",
     projectNum: "14",
     title: "Autism Spectrum Disorder Biomarker Discovery",
-    description: "Applied differential expression analysis and machine learning approaches to identify candidate biomarkers associated with Autism Spectrum Disorder.",
-    tags: ["Machine Learning", "Transcriptomics", "Biomarker Discovery", "Python", "Bioinformatics"],
+    description: "Investigated reproducible blood-based transcriptomic signatures associated with Autism Spectrum Disorder (ASD) by integrating independent GEO gene-expression datasets comparing ASD and control cohorts.",
+    tags: ["R", "Python", "GEO", "limma", "Cytoscape", "CytoHubba", "scikit-learn", "SHAP", "Enrichr", "LODO Validation", "Neurogenomics"],
     category: "Neurogenomics",
     highlights: [
-      "Analyzes peripheral whole-blood transcriptomic datasets.",
-      "Applies feature selection techniques to identify predictive biomolecules.",
-      "Develops high-classification-accuracy predictive models for early assessment."
+      "Performed differential-expression analysis using limma and network-based hub-gene analysis with Cytoscape/CytoHubba, identifying disease-associated genes and biological pathways consistently represented across independent studies.",
+      "Developed and evaluated machine-learning models for biomarker selection using leave-one-dataset-out (LODO) validation, testing the ability of candidate transcriptomic features to generalize across independent cohorts rather than relying solely on within-dataset performance.",
+      "Applied SHAP-based model interpretation and functional-enrichment analysis to identify stable predictive features and characterize their biological roles, prioritizing reproducible blood-based candidate biomarkers for ASD."
     ],
     imageUrl: "./p_14.png"
   },
