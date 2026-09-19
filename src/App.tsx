@@ -159,8 +159,8 @@ export default function App() {
           <a href="#about" className="text-clinical-text-muted hover:text-clinical-text-main transition-colors">[01/ ABOUT]</a>
           <a href="#experience" className="text-clinical-text-muted hover:text-clinical-text-main transition-colors">[02/ EXPERIENCE]</a>
           <a href="#education" className="text-clinical-text-muted hover:text-clinical-text-main transition-colors">[03/ EDUCATION]</a>
-          <a href="#skills" className="text-clinical-text-muted hover:text-clinical-text-main transition-colors">[04/ SKILLS]</a>
-          <a href="#research" className="text-clinical-text-muted hover:text-clinical-text-main transition-colors">[05/ PROJECTS]</a>
+          <a href="#research" className="text-clinical-text-muted hover:text-clinical-text-main transition-colors">[04/ PROJECTS]</a>
+          <a href="#skills" className="text-clinical-text-muted hover:text-clinical-text-main transition-colors">[05/ SKILLS]</a>
           <a href="#publications" className="text-clinical-text-muted hover:text-clinical-text-main transition-colors">[06/ PUBLICATIONS]</a>
           <a href="#contact" className="text-clinical-text-muted hover:text-clinical-text-main transition-colors">[07/ COLLAB]</a>
         </div>
@@ -349,56 +349,13 @@ export default function App() {
         </section>
 
         {/* ========================================================
-            3. SKILLS & TECHNOLOGIES (Scroller & Interactive Grid)
-            ======================================================== */}
-        <section id="skills" className="scroll-mt-24 space-y-8">
-          <ScrollReveal>
-            <div className="border-b border-clinical-border pb-6 mb-10">
-              <h2 className="font-sans text-3xl font-bold tracking-tight text-clinical-text-main">
-                04 - Technical Skills
-              </h2>
-            </div>
-          </ScrollReveal>
-
-          {/* Double-layered Infinite Marquee Banner */}
-          <Marquee />
-
-          {/* High-Fidelity Structured Skills Directory */}
-          <ScrollReveal>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-              {skills.map((category, index) => (
-                <div key={category.category} className="bg-white border border-clinical-border rounded-lg p-5 shadow-sm hover:border-neutral-800 transition-colors duration-300">
-                  <div className="flex items-center justify-between border-b border-clinical-border pb-3 mb-4 font-mono">
-                    <span className="text-[10px] text-clinical-text-muted uppercase tracking-widest font-bold">Cat. [{index + 1 < 10 ? `0${index + 1}` : index + 1}]</span>
-                    <Layers className="w-3.5 h-3.5 text-neutral-400 shrink-0" />
-                  </div>
-                  <h3 className="font-sans font-bold text-sm text-clinical-text-main tracking-tight uppercase mb-3">
-                    {category.category}
-                  </h3>
-                  <div className="flex flex-wrap gap-1.5">
-                    {category.skills.map((s, idx) => (
-                      <span
-                        key={idx}
-                        className="font-mono text-[10px] bg-neutral-100 text-neutral-700 border border-neutral-200 px-2 py-0.5 rounded cursor-default hover:bg-neutral-900 hover:text-white transition-colors duration-150"
-                      >
-                        {s}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </ScrollReveal>
-        </section>
-
-        {/* ========================================================
             4. RESEARCH & PROJECTS (Grid with Tech Tags & Insights)
             ======================================================= */}
         <section id="research" className="scroll-mt-24 space-y-6">
           <ScrollReveal>
             <div className="border-b border-clinical-border pb-6 mb-10">
               <h2 className="font-sans text-3xl font-bold tracking-tight text-clinical-text-main">
-                05 - Research Projects
+                04 - Research Projects
               </h2>
             </div>
           </ScrollReveal>
@@ -473,6 +430,49 @@ export default function App() {
               </div>
             ))}
           </div>
+        </section>
+
+        {/* ========================================================
+            5. SKILLS & TECHNOLOGIES (Scroller & Interactive Grid)
+            ======================================================== */}
+        <section id="skills" className="scroll-mt-24 space-y-8">
+          <ScrollReveal>
+            <div className="border-b border-clinical-border pb-6 mb-10">
+              <h2 className="font-sans text-3xl font-bold tracking-tight text-clinical-text-main">
+                05 - Technical Skills
+              </h2>
+            </div>
+          </ScrollReveal>
+
+          {/* Double-layered Infinite Marquee Banner */}
+          <Marquee />
+
+          {/* High-Fidelity Structured Skills Directory */}
+          <ScrollReveal>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              {skills.map((category, index) => (
+                <div key={category.category} className="bg-white border border-clinical-border rounded-lg p-5 shadow-sm hover:border-neutral-800 transition-colors duration-300">
+                  <div className="flex items-center justify-between border-b border-clinical-border pb-3 mb-4 font-mono">
+                    <span className="text-[10px] text-clinical-text-muted uppercase tracking-widest font-bold">Cat. [{index + 1 < 10 ? `0${index + 1}` : index + 1}]</span>
+                    <Layers className="w-3.5 h-3.5 text-neutral-400 shrink-0" />
+                  </div>
+                  <h3 className="font-sans font-bold text-sm text-clinical-text-main tracking-tight uppercase mb-3">
+                    {category.category}
+                  </h3>
+                  <div className="flex flex-wrap gap-1.5">
+                    {category.skills.map((s, idx) => (
+                      <span
+                        key={idx}
+                        className="font-mono text-[10px] bg-neutral-100 text-neutral-700 border border-neutral-200 px-2 py-0.5 rounded cursor-default hover:bg-neutral-900 hover:text-white transition-colors duration-150"
+                      >
+                        {s}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </ScrollReveal>
         </section>
 
         {/* ========================================================
