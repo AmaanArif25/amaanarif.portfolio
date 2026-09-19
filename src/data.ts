@@ -436,7 +436,7 @@ export const publications: Publication[] = [
     doi: "https://ibn.idsi.md/sites/default/files/imag_file/14.%20ARTUKLU%20PROCEEDINGS%20BOOK_compressed-2.pdf"
   },
   {
-    id: "pub_c_eurobioc2026",
+    id: "pub_c1",
     key: "C.1",
     authors: "Amaan Arif",
     title: "Altered Gut Microbiome Composition of Streptococcaceae and Lachnospiraceae in Multiple Sclerosis Patients",
@@ -447,7 +447,7 @@ export const publications: Publication[] = [
     description: "Presented an abstract-selected poster on cross-cohort gut microbiome alterations in Multiple Sclerosis, highlighting disease-associated changes in Streptococcaceae and Lachnospiraceae and communicating computational microbiome findings to an international bioinformatics research audience."
   },
   {
-    id: "pub_c_iabscon2026",
+    id: "pub_c2",
     key: "C.2",
     authors: "Amaan Arif",
     title: "Altered Gut Microbiome Composition of Streptococcaceae and Lachnospiraceae in Multiple Sclerosis Patients",
@@ -458,7 +458,7 @@ export const publications: Publication[] = [
     description: "Presented research on altered gut microbiome composition of Streptococcaceae and Lachnospiraceae in Multiple Sclerosis, communicating microbiome profiling findings from human 16S rRNA sequencing data at an international biomedical research conference; also participated in the associated CME programme on hands-on meta-analysis in biomedical sciences."
   },
   {
-    id: "pub_c1",
+    id: "pub_c3",
     key: "C.3",
     authors: "Amaan Arif",
     title: "Machine Learning-Driven Framework for Precision Crop and Fertilizer Recommendation Using Soil and Climatic Parameters",
@@ -469,7 +469,7 @@ export const publications: Publication[] = [
     description: "Presented an original machine-learning framework for precision crop and fertilizer recommendation, integrating soil and climatic parameters to develop a data-driven approach for agricultural decision-making and demonstrating the application of computational methods to biological and environmental datasets."
   },
   {
-    id: "pub_c2",
+    id: "pub_c4",
     key: "C.4",
     authors: "Amaan Arif",
     title: "AI-Powered Toxicity Profiling of Veterinary Drugs and Feed Additives: A Predictive Framework for Livestock Safety",
@@ -480,7 +480,7 @@ export const publications: Publication[] = [
     description: "Presented an AI-driven framework for toxicity profiling of veterinary drugs and feed additives, applying computational prediction approaches to investigate chemical safety and support data-driven risk assessment in livestock health."
   },
   {
-    id: "pub_c3",
+    id: "pub_c5",
     key: "C.5",
     authors: "Amaan Arif",
     title: "AI-Driven Linguistic Modelling for Neurodevelopmental Disorders",
@@ -491,7 +491,7 @@ export const publications: Publication[] = [
     description: "Presented research on AI-driven linguistic modelling for neurodevelopmental disorders, exploring computational language modelling approaches for the analysis and prediction of disorder-associated patterns."
   },
   {
-    id: "pub_c8",
+    id: "pub_c6",
     key: "C.6",
     authors: "Amaan Arif",
     title: "Role of Cloud Computing in High-Throughput Genome Assembly",
@@ -502,7 +502,7 @@ export const publications: Publication[] = [
     description: "Presented a review on the role of cloud computing in high-throughput genome assembly, synthesizing computational approaches for scalable genomic-data processing and connecting the work with undergraduate thesis research."
   },
   {
-    id: "pub_c4",
+    id: "pub_c7",
     key: "C.7",
     authors: "Amaan Arif",
     title: "AI-Powered Toxicity Prediction: Transforming Chemical Risk Assessment with Machine Learning Models",
@@ -513,7 +513,7 @@ export const publications: Publication[] = [
     description: "Presented an AI-based toxicity-prediction framework for chemical risk assessment, investigating machine-learning approaches for computational toxicology and predictive evaluation of chemical safety."
   },
   {
-    id: "pub_c5",
+    id: "pub_c8",
     key: "C.8",
     authors: "Amaan Arif",
     title: "Deep Sight: Revolutionizing Eye Disease Diagnosis through Advanced CNN-Based Retinal Image Classification",
@@ -521,10 +521,10 @@ export const publications: Publication[] = [
     date: "2025",
     type: "conference",
     status: "Virtual Presentation · Independent Research",
-    description: "Presented \"Deep Sight: Revolutionizing Eye Disease Diagnosis through Advanced CNN-Based Retinal Image Classification,\" demonstrating the application of convolutional neural networks to automated medical-image classification and computational disease screening."
+    description: "Presented “Deep Sight: Revolutionizing Eye Disease Diagnosis through Advanced CNN-Based Retinal Image Classification,” demonstrating the application of convolutional neural networks to automated medical-image classification and computational disease screening."
   },
   {
-    id: "pub_c6",
+    id: "pub_c9",
     key: "C.9",
     authors: "Amaan Arif",
     title: "Revolutionizing Ophthalmology with Deep Learning: Automated Retinal Image Classification for Disease Diagnosis",
@@ -535,7 +535,7 @@ export const publications: Publication[] = [
     description: "Presented research on deep-learning-based retinal image classification for ophthalmic disease diagnosis, developing a computational imaging approach for automated disease recognition from retinal photographs."
   },
   {
-    id: "pub_c7",
+    id: "pub_c10",
     key: "C.10",
     authors: "Amaan Arif",
     title: "Deep Learning in Neuroomics: Advances in Brain Mapping and Disease Prediction",
@@ -546,7 +546,7 @@ export const publications: Publication[] = [
     description: "Presented a review on deep learning in neuroomics, examining computational approaches for brain mapping, neurobiological data analysis and disease-prediction applications."
   },
   {
-    id: "pub_c9",
+    id: "pub_c11",
     key: "C.11",
     authors: "Amaan Arif",
     title: "Microbiota and AI",
@@ -554,21 +554,21 @@ export const publications: Publication[] = [
     date: "2025",
     type: "conference",
     status: "Oral Presentation · Poster/Research Communication",
-    description: "Presented \"Microbiota and AI,\" synthesizing microbiome research from undergraduate research training and examining the application of artificial intelligence to microbiome-associated biomedical investigations."
+    description: "Presented “Microbiota and AI,” synthesizing microbiome research from undergraduate research training and examining the application of artificial intelligence to microbiome-associated biomedical investigations."
   },
   {
-    id: "pub_c11",
+    id: "pub_c12",
     key: "C.12",
     authors: "Amaan Arif",
     title: "Transcriptomic Profiling Reveals the Key Role of the HDAC1 Gene in Frontotemporal Dementia",
-    source: "ISAD 2023 - Innovations and State of the Art in Alzheimer's & Dementia, Barcelona, Spain",
+    source: "ISAD 2023 - Innovations and State of the Art in Alzheimer’s & Dementia, Barcelona, Spain",
     date: "2023",
     type: "conference",
     status: "International Conference · Research Presentation · Selected/Fully Funded",
-    description: "Presented \"Transcriptomic Profiling Reveals the Key Role of the HDAC1 Gene in Frontotemporal Dementia,\" reporting transcriptome-based investigation of disease-associated molecular signatures and candidate regulatory mechanisms."
+    description: "Presented “Transcriptomic Profiling Reveals the Key Role of the HDAC1 Gene in Frontotemporal Dementia,” reporting transcriptome-based investigation of disease-associated molecular signatures and candidate regulatory mechanisms."
   },
   {
-    id: "pub_c10",
+    id: "pub_c13",
     key: "C.13",
     authors: "Amaan Arif",
     title: "Transcriptome Network Biology Reveals the Neuroprotective Potential of Rosmarinic Acid Against Frontotemporal Dementia",
@@ -576,10 +576,10 @@ export const publications: Publication[] = [
     date: "2023",
     type: "conference",
     status: "Oral Presentation · Research Presentation",
-    description: "Presented \"Transcriptome Network Biology Reveals the Neuroprotective Potential of Rosmarinic Acid Against Frontotemporal Dementia,\" communicating findings from a 45-day research internship integrating transcriptomic and network-biology approaches with computational phytochemical investigation."
+    description: "Presented “Transcriptome Network Biology Reveals the Neuroprotective Potential of Rosmarinic Acid Against Frontotemporal Dementia,” communicating findings from a 45-day research internship integrating transcriptomic and network-biology approaches with computational phytochemical investigation."
   },
   {
-    id: "pub_c12",
+    id: "pub_c14",
     key: "C.14",
     authors: "Amaan Arif",
     title: "Machine Learning-Based Dementia Prediction Using Clinical Data: Non-Invasive Approach for Early Detection and Management",
