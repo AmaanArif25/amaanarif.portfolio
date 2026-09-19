@@ -1,29 +1,29 @@
 import { useState, useEffect, useRef, ReactNode } from 'react';
-import { 
-  personalInfo, 
-  researchExperiences, 
-  educations, 
-  projects, 
-  publications, 
-  skills, 
-  honorsAndAwards, 
-  leadershipActivities, 
-  workshops, 
+import {
+  personalInfo,
+  researchExperiences,
+  educations,
+  projects,
+  publications,
+  skills,
+  honorsAndAwards,
+  leadershipActivities,
+  workshops,
   snapshots,
   editorialActivities
 } from './data';
-import { 
-  BookOpen, 
-  GraduationCap, 
-  Award, 
-  FileText, 
-  ExternalLink, 
-  ChevronRight, 
-  Search, 
-  Bookmark, 
-  Calendar, 
-  Layers, 
-  User, 
+import {
+  BookOpen,
+  GraduationCap,
+  Award,
+  FileText,
+  ExternalLink,
+  ChevronRight,
+  Search,
+  Bookmark,
+  Calendar,
+  Layers,
+  User,
   CheckCircle,
   Briefcase,
   Compass,
@@ -73,9 +73,8 @@ function ScrollReveal({ children }: { children: ReactNode }) {
   return (
     <div
       ref={ref}
-      className={`transition-all duration-800 ease-out transform ${
-        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
-      }`}
+      className={`transition-all duration-800 ease-out transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
+        }`}
     >
       {children}
     </div>
@@ -99,55 +98,6 @@ export default function App() {
     return () => clearInterval(interval);
   }, []);
 
-  // Global Anti-Copy and Image Protection Listeners
-  useEffect(() => {
-    const handleContextMenu = (e: MouseEvent) => {
-      e.preventDefault();
-    };
-
-    const handleCopy = (e: ClipboardEvent) => {
-      const target = e.target as HTMLElement;
-      if (target && (target.tagName === 'INPUT' || target.tagName === 'TEXTAREA')) {
-        return;
-      }
-      e.preventDefault();
-    };
-
-    const handleDragStart = (e: DragEvent) => {
-      e.preventDefault();
-    };
-
-    const handleKeyDown = (e: KeyboardEvent) => {
-      const target = e.target as HTMLElement;
-      if (target && (target.tagName === 'INPUT' || target.tagName === 'TEXTAREA')) {
-        return;
-      }
-      // Prevent Ctrl+C, Ctrl+U, Ctrl+S, Ctrl+A, F12
-      if (
-        (e.ctrlKey || e.metaKey) && 
-        ['c', 'C', 'u', 'U', 's', 'S', 'a', 'A'].includes(e.key)
-      ) {
-        e.preventDefault();
-      }
-      if (e.key === 'F12') {
-        e.preventDefault();
-      }
-    };
-
-    document.addEventListener('contextmenu', handleContextMenu);
-    document.addEventListener('copy', handleCopy);
-    document.addEventListener('cut', handleCopy);
-    document.addEventListener('dragstart', handleDragStart);
-    document.addEventListener('keydown', handleKeyDown);
-
-    return () => {
-      document.removeEventListener('contextmenu', handleContextMenu);
-      document.removeEventListener('copy', handleCopy);
-      document.removeEventListener('cut', handleCopy);
-      document.removeEventListener('dragstart', handleDragStart);
-      document.removeEventListener('keydown', handleKeyDown);
-    };
-  }, []);
 
   // Filter and split publications dynamically by section
   const matchesSearch = (pub: typeof publications[0], query: string) => {
@@ -168,7 +118,7 @@ export default function App() {
   const renderAuthors = (authorsStr: string) => {
     const namesToBold = ["Arif, A.", "Amaan Arif", "Arif, A"];
     let parts: (string | ReactNode)[] = [authorsStr];
-    
+
     namesToBold.forEach(name => {
       const nextParts: (string | ReactNode)[] = [];
       parts.forEach(part => {
@@ -176,7 +126,7 @@ export default function App() {
           nextParts.push(part);
           return;
         }
-        
+
         const regex = new RegExp(`(${name.replace('.', '\\.')})`, 'g');
         const splits = part.split(regex);
         splits.forEach((split, idx) => {
@@ -189,7 +139,7 @@ export default function App() {
       });
       parts = nextParts;
     });
-    
+
     return <>{parts}</>;
   };
 
@@ -203,7 +153,7 @@ export default function App() {
             AMAAN_ARIF // PORTFOLIO
           </a>
         </div>
-        
+
         {/* Navigation Quick Anchors */}
         <div className="hidden lg:flex items-center space-x-5 font-mono text-[10px] uppercase tracking-wider">
           <a href="#about" className="text-clinical-text-muted hover:text-clinical-text-main transition-colors">[01/ ABOUT]</a>
@@ -220,8 +170,8 @@ export default function App() {
             <Clock className="w-3 h-3 text-neutral-400" />
             {utcTime}
           </span>
-          <a 
-            href="#contact" 
+          <a
+            href="#contact"
             id="btn-nav-contact"
             className="px-3 py-1.5 bg-neutral-900 text-white rounded font-mono uppercase tracking-widest text-[9px] hover:bg-neutral-800 transition-all cursor-pointer"
           >
@@ -238,7 +188,7 @@ export default function App() {
 
       {/* Main Structural Framework */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10 space-y-24">
-        
+
         {/* ========================================================
             1. HERO SECTION (Abstract & Biological Terminal Aesthetic)
             ======================================================== */}
@@ -254,11 +204,11 @@ export default function App() {
           {/* Upper Zone: Name and Bio details (Split-Grid on desktop) */}
           <div className="w-full bg-white border border-clinical-border rounded-xl p-6 sm:p-8 md:p-10 shadow-xs relative overflow-hidden">
             <div className="absolute top-0 right-0 w-32 h-32 bg-neutral-100 rounded-full blur-3xl opacity-40 z-0 pointer-events-none" />
-            
+
             <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
               {/* Left Column: Complete Text Flow & Metrics below header */}
               <div className="lg:col-span-8 space-y-6">
-                
+
                 {/* Name Header & Sub-headers */}
                 <div>
                   <h1 className="font-sans text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-clinical-text-main leading-tight mb-2.5">
@@ -279,8 +229,8 @@ export default function App() {
 
                 {/* CTA Action Buttons */}
                 <div className="flex flex-wrap gap-3.5 pt-2">
-                  <a 
-                    href="#research" 
+                  <a
+                    href="#research"
                     id="btn-hero-explore"
                     className="px-5 py-2.5 bg-clinical-text-main text-white font-mono text-[11px] uppercase tracking-wider hover:bg-neutral-800 rounded transition-colors inline-flex items-center space-x-2 cursor-pointer shadow-xs"
                   >
@@ -323,8 +273,8 @@ export default function App() {
 
                 <div className="relative border-l border-neutral-200 pl-4 md:pl-6 ml-2 space-y-8">
                   {researchExperiences.map((exp) => (
-                    <div 
-                      key={exp.id} 
+                    <div
+                      key={exp.id}
                       className="relative bg-white p-4 border border-clinical-border rounded-lg group transition-all duration-200"
                     >
                       {/* Timeline dot */}
@@ -336,14 +286,14 @@ export default function App() {
                         <span className="font-mono text-[10px] text-[#007acc] font-bold">{exp.period}</span>
                         <span className="font-mono text-[9px] text-neutral-400 uppercase tracking-widest">{exp.location}</span>
                       </div>
-                      
+
                       <h3 className="font-sans font-bold text-base text-clinical-text-main mt-1 flex flex-wrap items-center gap-1.5">
-                        {exp.role} 
+                        {exp.role}
                         <span className="text-clinical-text-muted font-normal text-xs md:text-sm">@ {exp.institution}</span>
                       </h3>
 
                       {exp.summary && (
-                        <p className="font-sans text-xs text-neutral-700 mt-2 font-medium leading-relaxed">
+                        <p className="font-sans text-xs text-neutral-700 mt-2 font-medium leading-relaxed text-justify">
                           {exp.summary}
                         </p>
                       )}
@@ -427,8 +377,8 @@ export default function App() {
                   </h3>
                   <div className="flex flex-wrap gap-1.5">
                     {category.skills.map((s, idx) => (
-                      <span 
-                        key={idx} 
+                      <span
+                        key={idx}
                         className="font-mono text-[10px] bg-neutral-100 text-neutral-700 border border-neutral-200 px-2 py-0.5 rounded cursor-default hover:bg-neutral-900 hover:text-white transition-colors duration-150"
                       >
                         {s}
@@ -455,18 +405,18 @@ export default function App() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
             {projects.map((project) => (
-              <div 
-                key={project.id} 
+              <div
+                key={project.id}
                 className="interactive-card bg-white border border-clinical-border rounded-xl p-5 shadow-sm flex flex-col justify-between hover:-translate-y-1 hover:shadow-md transition-all duration-300 relative group"
                 id={`card-${project.id}`}
               >
                 <div>
                   {project.imageUrl && (
                     <div className="overflow-hidden rounded-lg aspect-video w-full mb-4 relative bg-neutral-100 border border-clinical-border">
-                      <img 
-                        src={project.imageUrl.startsWith('/') ? '.' + project.imageUrl : project.imageUrl} 
-                        alt={project.title} 
-                        className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500" 
+                      <img
+                        src={project.imageUrl.startsWith('/') ? '.' + project.imageUrl : project.imageUrl}
+                        alt={project.title}
+                        className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500"
                         referrerPolicy="no-referrer"
                       />
                       <div className="absolute top-2.5 left-2.5 bg-white/95 backdrop-blur-xs border border-clinical-border px-2 py-0.5 rounded font-mono text-[9px] text-[#007acc] font-black shadow-3xs">
@@ -485,7 +435,7 @@ export default function App() {
                   <h3 className="font-sans text-base font-black tracking-tight text-clinical-text-main group-hover:text-black transition-colors leading-snug">
                     {project.title}
                   </h3>
-                  
+
                   <p className="font-sans text-xs text-neutral-500 mt-2.5 leading-relaxed line-clamp-3 font-normal">
                     {project.description}
                   </p>
@@ -509,7 +459,7 @@ export default function App() {
                     ))}
                   </div>
                   {project.linkUrl && (
-                    <a 
+                    <a
                       href={project.linkUrl}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -540,7 +490,7 @@ export default function App() {
           {/* Interactive Scientific Database Toolbar */}
           <div className="bg-white border border-clinical-border rounded-lg p-4 shadow-sm space-y-4">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-              
+
               {/* Category Quick Jumps instead of active filters */}
               <div className="flex flex-wrap gap-2 font-mono text-[10px] tracking-wider uppercase select-none items-center">
                 <span className="text-clinical-text-muted mr-1">QUICK JUMP:</span>
@@ -586,7 +536,7 @@ export default function App() {
 
           {/* Subsections list rendering */}
           <div className="space-y-12">
-            
+
             {/* SUBSECTION 1: JOURNAL ARTICLES & BOOK CHAPTERS */}
             <div id="journals-section" className="scroll-mt-28 space-y-4">
               <div className="flex items-center gap-3 border-b border-clinical-border pb-2.5">
@@ -604,10 +554,10 @@ export default function App() {
                   matchedJournals.map((pub) => {
                     const isPreprint = pub.status.toLowerCase().includes('preprint');
                     const isInPress = pub.status.toLowerCase().includes('press') || pub.status.toLowerCase().includes('accept');
-                    
+
                     // Button Label helper
                     const buttonLabel = isPreprint ? "Read Preprint" : isInPress ? "View Forthcoming Page" : "Read Paper";
-                    
+
                     return (
                       <div key={pub.id} className="p-4 md:p-6 hover:bg-neutral-50/30 transition-colors duration-150">
                         <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-2 text-[10px] font-mono mb-2 text-neutral-400">
@@ -627,10 +577,10 @@ export default function App() {
 
                         {pub.doi && (
                           <div className="mt-4 flex">
-                            <a 
-                              href={pub.doi} 
-                              target="_blank" 
-                              rel="noopener noreferrer" 
+                            <a
+                              href={pub.doi}
+                              target="_blank"
+                              rel="noopener noreferrer"
                               className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-neutral-900 hover:bg-neutral-800 text-white rounded text-[10px] font-mono font-bold tracking-wider uppercase transition-colors shrink-0"
                             >
                               <span>{buttonLabel}</span>
@@ -667,12 +617,12 @@ export default function App() {
                     const featuredIds = ['pub_c1', 'pub_c2', 'pub_c3', 'pub_c11'];
                     const featured = matchedConferences.filter(c => featuredIds.includes(c.id));
                     const fallbackOther = matchedConferences.filter(c => !featuredIds.includes(c.id));
-                    
+
                     const displayedFeatured = featured;
                     const displayedOther = showAllConferences ? fallbackOther : [];
-                    
+
                     const countOfHidden = fallbackOther.length;
-                    
+
                     return (
                       <>
                         {/* Display Top/Featured Conferences first */}
@@ -723,8 +673,8 @@ export default function App() {
                               className="inline-flex items-center gap-1.5 px-4 py-2 bg-white border border-clinical-border hover:bg-neutral-50 text-neutral-800 rounded-md text-[10.5px] font-mono font-bold uppercase tracking-wider transition-all shadow-sm cursor-pointer hover:border-neutral-400 active:bg-neutral-100"
                             >
                               <span>
-                                {showAllConferences 
-                                  ? "Hide Full Conference Record" 
+                                {showAllConferences
+                                  ? "Hide Full Conference Record"
                                   : `View Full Conference Record (+${countOfHidden})`
                                 }
                               </span>
@@ -853,7 +803,7 @@ export default function App() {
                     <Compass className="w-4 h-4" />
                     <span className="font-bold">Let's Connect!</span>
                   </div>
-                  
+
                   <ul className="space-y-4">
                     <li className="flex items-start space-x-3 text-xs">
                       <MapPin className="w-4 h-4 text-neutral-800 shrink-0 mt-0.5" />
@@ -882,18 +832,18 @@ export default function App() {
                 <div className="border-t border-dashed border-clinical-border pt-4 mt-6">
                   <span className="block font-mono text-[9px] uppercase tracking-wider text-clinical-text-muted mb-2.5 font-bold">Scientific Repositories</span>
                   <div className="flex flex-wrap gap-2">
-                    <a 
-                      href={personalInfo.github} 
-                      target="_blank" 
+                    <a
+                      href={personalInfo.github}
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center space-x-1.5 px-3 py-1.5 border border-clinical-border hover:bg-neutral-50 hover:border-neutral-800 transition-colors rounded text-xs text-neutral-700 cursor-pointer"
                     >
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" className="w-3.5 h-3.5" />
                       <span className="font-mono text-[9px]">GITHUB</span>
                     </a>
-                    <a 
-                      href={personalInfo.linkedin} 
-                      target="_blank" 
+                    <a
+                      href={personalInfo.linkedin}
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center space-x-1.5 px-3 py-1.5 border border-clinical-border hover:bg-neutral-50 hover:border-blue-500 transition-colors rounded text-xs text-neutral-700 cursor-pointer"
                     >
@@ -901,9 +851,9 @@ export default function App() {
                       <span className="font-mono text-[9px]">LINKEDIN</span>
                     </a>
                     {personalInfo.huggingface && (
-                      <a 
-                        href={personalInfo.huggingface} 
-                        target="_blank" 
+                      <a
+                        href={personalInfo.huggingface}
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center space-x-1.5 px-3 py-1.5 border border-clinical-border hover:bg-neutral-50 rounded text-xs text-neutral-700 cursor-pointer hover:border-amber-400 transition-colors"
                         title="Hugging Face Repository"
@@ -913,9 +863,9 @@ export default function App() {
                       </a>
                     )}
                     {personalInfo.googleScholar && (
-                      <a 
-                        href={personalInfo.googleScholar} 
-                        target="_blank" 
+                      <a
+                        href={personalInfo.googleScholar}
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center space-x-1.5 px-3 py-1.5 border border-clinical-border hover:bg-neutral-50 rounded text-xs text-neutral-700 cursor-pointer hover:border-blue-400 transition-colors"
                         title="Google Scholar Profile"
@@ -957,7 +907,7 @@ export default function App() {
       {showResumeModal && (
         <div className="fixed inset-0 bg-neutral-950/40 backdrop-blur-sm z-50 flex items-center justify-center p-4 overflow-y-auto">
           <div className="bg-white border border-clinical-border rounded-lg max-w-4xl w-full p-6 md:p-8 shadow-2xl relative my-8 animate-in fade-in zoom-in duration-200">
-            <button 
+            <button
               onClick={() => setShowResumeModal(false)}
               className="absolute top-4 right-4 text-clinical-text-muted hover:text-black transition-colors cursor-pointer"
               title="Close System CV Panel"
@@ -969,14 +919,14 @@ export default function App() {
             <div className="flex flex-col md:flex-row md:items-center justify-between pb-4 border-b border-clinical-border mb-6 font-mono text-[10px] text-clinical-text-muted gap-4">
               <span>AMAAN_ARIF_CREDENTIALS_MANIFEST // STATIC READOUT</span>
               <div className="flex gap-2">
-                <button 
-                  onClick={() => window.print()} 
+                <button
+                  onClick={() => window.print()}
                   className="px-3 py-1 border border-clinical-border hover:bg-neutral-50 rounded flex items-center gap-1.5 text-neutral-800 cursor-pointer"
                 >
                   <Printer className="w-3 h-3" />
                   <span>PRINT RESUME PROTOCOL (PDF)</span>
                 </button>
-                <button 
+                <button
                   onClick={() => setShowResumeModal(false)}
                   className="px-3 py-1 bg-neutral-950 text-white rounded cursor-pointer"
                 >
@@ -987,7 +937,7 @@ export default function App() {
 
             {/* Sterile Print-Compliant Layout Container */}
             <div className="space-y-6 max-h-[70vh] overflow-y-auto pr-3 font-sans text-xs scrollbar-thin print:max-h-none print:overflow-visible">
-              
+
               {/* Header Box */}
               <div className="text-center md:text-left border-b border-clinical-border pb-4">
                 <h2 className="text-2xl font-extrabold text-clinical-text-main">Amaan Arif</h2>
@@ -1006,7 +956,7 @@ export default function App() {
 
               {/* Grid 2 column */}
               <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
-                
+
                 {/* Left Column: Education & Skills */}
                 <div className="md:col-span-5 space-y-6">
                   {/* Education */}
@@ -1042,7 +992,7 @@ export default function App() {
 
                 {/* Right Column: Experience Summary & Honors */}
                 <div className="md:col-span-7 space-y-6">
-                  
+
                   {/* Research Experience summary */}
                   <div className="space-y-3">
                     <span className="font-mono text-[10px] uppercase text-clinical-text-muted border-b border-clinical-border block pb-1.5 font-bold">Research Experience Chronology</span>
@@ -1054,7 +1004,7 @@ export default function App() {
                         </div>
                         <h4 className="font-semibold text-neutral-900">{exp.role} <span className="font-normal text-neutral-600">@ {exp.institution}</span></h4>
                         {exp.details && (
-                          <p className="font-sans text-[11px] text-neutral-500 leading-normal pl-2 border-l border-neutral-200 mt-1">
+                          <p className="font-sans text-[11px] text-neutral-500 leading-normal pl-2 border-l border-neutral-200 mt-1 text-justify">
                             {exp.details[0]}
                           </p>
                         )}

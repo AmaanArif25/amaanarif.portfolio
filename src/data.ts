@@ -44,13 +44,21 @@ export const researchExperiences: ResearchExperience[] = [
     location: "Lucknow, India",
     role: "Project Assistant",
     period: "May 2025 – Feb 2026",
-    summary: "Developed AI-assisted computational pipelines for molecular docking, linker ranking, bioisostere identification, and biomimetic compound analysis to support structure-based drug discovery. Applied machine learning algorithms to predict metabolite profiles and prioritize drug candidates using molecular descriptors and cheminformatics workflows.",
+    summary: "Worked as a Project Assistant at CSIR-IITR, developing AI-assisted computational workflows for drug discovery and chemical analysis. Developed ML-based approaches for protein-ligand docking analysis, linker ranking, and bioisostere identification using curated chemical and structure-based datasets. Applied scaffold-based analysis to characterize chemical relationships across publicly reported compounds. Developed structure-aware ML models for predicting metabolite profiles of parent compounds using molecular descriptors and molecular fingerprints. Critically evaluated how chemical structure, representation, and learned patterns influence computational predictions, integrating cheminformatics, molecular modelling, and machine learning to support hypothesis generation for drug discovery and toxicological research.",
     details: [
       "Developed a metabolism-aware, multi-task machine learning pipeline to predict multi-class skin toxicity for biomimetic parent compounds and metabolites.",
       "Translated complex toxicological outputs into an interpretable, AOP-aligned (Adverse Outcome Pathway) risk score.",
       "Utilized AI for drug repurposing, chemical scaffold analysis, linker design and ranking, and the identification of cryptic pockets."
     ],
-    tags: ["Computational Chemistry", "Toxicogenomics", "Multi-task ML", "Drug Repurposing"]
+    tags: [
+      "Computational Drug Discovery",
+      "Computer Aided Drug Design",
+      "Cheminformatics",
+      "Machine Learning",
+      "Python (BioPython, Pandas, NumPy, etc.)",
+      "RDKit",
+      "Molecular Modeling"
+    ]
   },
   {
     id: "exp2",
@@ -58,12 +66,21 @@ export const researchExperiences: ResearchExperience[] = [
     location: "Lucknow, India",
     role: "Research Intern",
     period: "Jan 2025 – May 2025",
-    summary: "AI-enabled non-invasive oral cancer screening system by integrating clinical records, intraoral images, and breath biomarker data from patient cohorts. Designed machine learning models for multimodal data analysis, feature extraction, and predictive classification to support early oral cancer detection.",
+    summary: "Contributed to a six-month interdisciplinary project on oral cancer risk-stage classification using multimodal clinical data, including patient parameters, buccal-cavity images and halitosis-related measurements. Developed reproducible Python workflows with Pandas, NumPy and Scikit-learn for preprocessing, feature engineering, model development and evaluation. Critically examined how complementary data modalities influenced predictive performance, interpretability and biological relevance. Collaborated with clinicians, oncologists and researchers to translate clinical knowledge into computational features and assess model limitations. This experience strengthened my ability to integrate medical imaging, clinical data and machine learning while approaching biomedical prediction with methodological rigor, critical reasoning and translational awareness.",
     details: [
       "Designed a multi-modal machine learning pipeline that successfully integrated disparate data sources, including complex clinical parameters, diagnostic medical imaging, and novel breath-based biomarkers.",
       "Bridged clinical pathology with computational predictive modeling to improve non-invasive screening accuracy."
     ],
-    tags: ["Multi-modal ML", "Medical Image Analysis", "Clinical Biomarkers", "Predictive Diagnostics"]
+    tags: [
+      "Machine Learning",
+      "Biological Data Analysis",
+      "Predictive Modeling",
+      "Data Preprocessing",
+      "Python (BioPython, Pandas, NumPy, etc.)",
+      "Scikit-Learn",
+      "Medical Imaging",
+      "Oral Cancer"
+    ]
   },
   {
     id: "exp3",
@@ -71,12 +88,22 @@ export const researchExperiences: ResearchExperience[] = [
     location: "New Delhi, India",
     role: "Research Intern (Bachelor's Thesis Project)",
     period: "Dec 2024 – May 2025",
-    summary: "Developed an LSTM-based deep learning framework to improve genome assembly through contig extension and scaffold optimization using viral genomic datasets. Investigated advanced scaffolding strategies and computational approaches for enhancing assembly continuity, completeness, and genome reconstruction accuracy. Completed the undergraduate thesis, Breaking Barriers in Genome Assembly with Advanced Scaffolding Methods, integrating bioinformatics algorithms with deep learning for genome assembly analysis.",
+    summary: "Conducted my undergraduate thesis at CSIR-IGIB, critically investigating deep-learning strategies for viral genome reconstruction using SARS-CoV-2 data. Developed an LSTM-based sequence prediction framework trained on k-mer representations to model nucleotide patterns and generate candidate contig extensions. Integrated forward and reverse sequencing information with user-provided contigs, applying iterative extension and sequence-quality assessment to determine reliable assembly boundaries. Evaluated the complementary roles of de novo assembly, reference-guided information, k-mer analysis and recurrent neural networks in addressing genome reconstruction challenges. This work strengthened my research skills in computational genomics, experimental workflow design, model interpretation and scientifically grounded evaluation of bioinformatics methods. Presented my dissertation research to the project group and faculty, earning an A+ grade for the undergraduate thesis.",
     details: [
       "Engineered and trained a specialized LLM on viral reference genomes to automate and predict viral contig extensions.",
       "Established rigorous computational validation protocols; utilized BLAST to verify generated sequences, achieving 99% similarity and proving zero hallucination in the synthesized viral genomic data."
     ],
-    tags: ["LLMs", "Genomics", "BLAST", "Deep Learning"]
+    tags: [
+      "Next-Generation Sequencing (NGS) Analysis",
+      "Python (BioPython, Pandas, NumPy, etc.)",
+      "Cancer Genomics",
+      "Genome Assembly (SPAdes, MEGAHIT, hifiasm)",
+      "Linux/Unix Command Line",
+      "R (tidyverse, ggplot2, DESeq2, etc.)",
+      "Artificial Intelligence (AI)",
+      "WSL",
+      "Python (Programming Language)"
+    ]
   }
 ];
 
