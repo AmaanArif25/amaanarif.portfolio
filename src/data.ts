@@ -191,14 +191,14 @@ export const projects: Project[] = [
   {
     id: "proj05",
     projectNum: "05",
-    title: "Viral Genome Scaffolding Using Large Language Models",
-    description: "Developed an LLM-based framework for viral contig extension and genome scaffolding. Validated generated sequences against reference genomes using BLAST with >99% similarity.",
-    tags: ["Python", "LLMs", "Genomics", "Bioinformatics", "BLAST"],
-    category: "AI & Genomics",
+    title: "Deep Learning-Based Viral Genome Scaffolding",
+    description: "Developed a deep-learning framework for viral contig extension and genome scaffolding using SARS-CoV-2 sequence data, modelling nucleotide patterns through k-mer representations and recurrent neural-network architectures.",
+    tags: ["Python", "LSTM/RNN", "k-mer analysis", "BLAST", "Sequence Assembly", "Computational Genomics"],
+    category: "Computational Genomics",
     highlights: [
-      "Adapts generative language-model weights to map viral genomic nucleotide configurations.",
-      "Demonstrates high contig-assembly accuracy through rigorous computational validation.",
-      "Achieves >99% similarity index during direct BLAST query verifications."
+      "Designed an iterative contig-extension workflow integrating forward and reverse sequencing information with user-provided contigs to generate candidate extensions and determine reliable assembly boundaries.",
+      "Integrated de novo assembly, reference-guided information and sequence-quality assessment to compare complementary strategies for reconstructing incomplete viral genomes and evaluating candidate scaffolds.",
+      "Validated generated sequences against reference genomes using BLAST, obtaining >99% sequence similarity for the evaluated reconstructed sequences and demonstrating high agreement with reference viral genomes."
     ],
     imageUrl: "./p_5.png",
     status: "THESIS"
